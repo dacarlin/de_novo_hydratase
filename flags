@@ -1,7 +1,9 @@
--s blgb.pdb 
--match:geometric_constraint_file cst/match/RBO_YTS_YTS.cst 
+-s bglb.pdb
+-match::scaffold_active_site_residues bglb.pos 
+-match:geometric_constraint_file hydratase.enzdes.cst
 -match:lig_name LG1 
--extra_res_fa LG1 
+-extra_res_fa LG1.params 
+-use_input_sc 
 -ex1 
 -ex2 
 -ex3
